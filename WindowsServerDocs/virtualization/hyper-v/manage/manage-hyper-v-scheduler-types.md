@@ -107,7 +107,7 @@ PowerShell must be used to enable SMT in a guest virtual machine; there is no us
 To enable SMT in a guest virtual machine, open a PowerShell window with sufficient permissions, and type:
 
 ``` powershell
-Set-VMProcessor -VMName <VMName> -HwThreadCountPerCore <n>
+Set-VMProcessor -VMName <VMName> -HwThreadCountPerCore <0/1/2>
 ```
 
 Where \<n> is the number of SMT threads per core the guest VM sees.
